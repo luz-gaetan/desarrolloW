@@ -38,8 +38,6 @@
             </div>
             <div class="sections">
                 <span id="skills" class="section-tab">Habilidades</span>
-                <span id="experience" class="section-tab">Experiencia</span>
-                <span id="education" class="section-tab">Educación</span>
             </div>
             <div id="content">
                 <div id="skills-content" class="section-content">
@@ -73,100 +71,9 @@
                         <div class="line"></div>
                     </div>
                 </div>
-                <div id="experience-content" class="section-content">
-                    <div class="puesto">Analista Funcional</div>
-                    <div class="position">Famiq | sep. 2023 - actualidad</div>
-                    <div class="description">
-                        <ul>
-                            <li>Implementar el nuevo sistema de gestión para el registro y automatización de tareas de la empresa, brindando soporte en la adaptación post-productiva.</li>
-                            <li>Armar el plan anual del proyecto, estableciendo cronogramas y objetivos clave.</li>
-                            <li>Establecer, priorizar y coordinar tareas del equipo.</li>
-                            <li>Generar y presentar reportes de avance.</li>
-                            <li>Armado de RFP para selección de proveedor, incluyendo el proceso de solicitud de propuestas.</li>
-                            <li>Control de consultoría (horas, trabajo presentado, presupuestos y extensión de contrato) para asegurar que el uso de recursos se ajuste a lo planificado.</li>
-                            <li>Relevamiento, análisis y documentación de requerimientos</li>
-                            <li>Diseño y ejecución de casos de uso/casos de prueba</li>
-                            <li>Detección de errores y propuesta de mejoras</li>
-                        </ul>
-                    </div>
-
-                    <div class="puesto">Capacity web</div>
-                    <div class="position">Famiq | jul. 2023 - mar. 2024</div>
-                    <div class="description">
-                        <ul>
-                            <li>Generar informes de velocity y devíos.</li>
-                            <li>Asignar tareas y proporcionar apoyo al equipo de desarrollo web durante los sprints.</li>
-                        </ul>
-                    </div>
-
-                    <div class="puesto">Desarrollador web</div>
-                    <div class="position">Famiq | ene. 2020 - nov. 2023</div>
-                    <div class="description">
-                        <ul>
-                            <li>Desarrollo web FrontEnd (Vue.js, JavaScript)</li>
-                            <li>Soporte nivel 2</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div id="education-content" class="section-content">
-                    <div class="position">Licenciatura en Gestión de Tecnología de la Información</div>
-                    <div class="description">UADE | ago. 2024 - dic. 2027</div>
-
-                    <div class="position">Diplomatura en Análisis Funcional</div>
-                    <div class="description">UNSAM | abr. 2024 - oct. 2024</div>
-                    
-                    <div class="position">Diplomatura en Project Management</div>
-                    <div class="description">UCES | may. 2024 - ago. 2024</div>
-                    
-                    <div class="position">Curso de Liderazgo y Gestión de Equipos</div>
-                    <div class="description">CODERHOUSE | ene. 2024 - ene. 2024</div>
-                    
-                    <div class="position">Curso Product Manager</div>
-                    <div class="description">CODERHOUSE | oct. 2023 - dic. 2023</div>
-                </div>
             </div>
         </div>
     </main>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const tabs = document.querySelectorAll('.section-tab');
-            const contents = document.querySelectorAll('.section-content');
-
-            function showContent(id) {
-                contents.forEach(content => {
-                    if (content.id === id) {
-                        content.style.display = 'block';
-                    } else {
-                        content.style.display = 'none';
-                    }
-                });
-            }
-
-            function setActiveTab(id) {
-                tabs.forEach(tab => {
-                    if (tab.id === id) {
-                        tab.classList.add('active');
-                    } else {
-                        tab.classList.remove('active');
-                    }
-                });
-            }
-
-            tabs.forEach(tab => {
-                tab.addEventListener('click', () => {
-                    const contentId = `${tab.id}-content`;
-                    showContent(contentId);
-                    setActiveTab(tab.id);
-                });
-            });
-
-            if (tabs.length > 0) {
-                tabs[0].click();
-            }
-        });
-    </script>
 </body>
 
 </html>
