@@ -1,0 +1,357 @@
+/* GENERAL-------------------------------------------------------------------------- */
+body{
+    background-color: #F9FAFF;
+    padding: 8px 24px;
+}
+
+nav{
+    font-size: 20px;
+    font-family: 'Inter';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link{
+    color: #25282B;
+    text-decoration: none;
+}
+
+.nav-item:not(:last-child){
+    padding-right: 16px;
+}
+
+.nav-item:not(:first-child){
+    padding-left: 16px;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+}
+
+.content{
+    display: flex;
+    justify-content: normal;
+    align-items: flex-start;
+    margin-top: 3%;
+}
+
+.title{
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.subtitle{
+    font-family: 'Nunito';
+    font-size: 20px;
+    font-weight: bold;
+    color: #FDC435;
+}
+
+.text{
+    font-family: 'Nunito';
+    font-size: 24px;
+    line-height: 1.5;
+    color: #828282;
+}
+
+.w-65{
+    width: 65%;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-35{
+    width: 35%;
+}
+
+.w-30{
+    width: 30%;
+}
+/* HOME ---------------------------------------------------------------------------- */
+
+.presentacion{
+    position: absolute;
+    top: 20%;
+}
+
+.me{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    height: auto;
+}
+
+.presentacion button{
+    background-color: #FDC435;
+    border: 1px solid #FDC435;
+    border-radius: 6px;
+    padding: 8px 16px;
+    width: 150px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.presentacion a{
+    font-size: 16px;
+    color: #25282B;
+    text-decoration: none;
+}
+
+/* ABOUT ME------------------------------------------------------------------------- */
+
+.about-me .title::after{
+    content: '';
+    display: block;
+    width: 60%;
+    height: 3px;
+    background-color: #FDC435;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.about-me .text{
+    font-size: 18px;
+}
+
+.sections {
+    margin: 16px 0px 8px;
+}
+
+.section-tab {
+    cursor: pointer;
+    margin-right: 32px;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    font-size: 18px;
+    position: relative
+}
+
+.section-tab::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 2px;
+    background-color: #FDC435;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.section-content {
+    margin-top: 24px;
+    font-family: 'Nunito';
+}
+
+.section-content .puesto{
+    font-weight: bold;
+}
+
+.section-content .description{
+    color: #828282;
+    margin: 8px 0px 16px;
+}
+
+.section-content .description ul{
+    margin: 0px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 8px -15px;
+}
+
+.circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #FDC435;
+    position: relative;
+    z-index: 2;
+}
+
+.line {
+    height: 2px;
+    background-color: #ddd;
+    position: relative;
+    z-index: 1;
+    width: 60%;
+}
+
+/* CURRICULUM----------------------------------------------------------------------- */
+.curriculum{
+    display: grid;
+    grid-template-columns: 35% 60%;
+    gap: 20px 40px;
+}
+
+.title-section {
+    cursor: pointer;
+    margin-bottom: 16px;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    font-size: 20px;
+    position: relative
+}
+
+.title-section::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 2px;
+    background-color: #FDC435;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.section-contacto, .section-experiencia{
+    margin: 16px 0px 32px;
+
+}
+
+.section-cursos, .section-estudio{
+    margin-top: 16px;
+
+}
+
+.curriculum .title{
+    font-weight: bold;
+    font-family: 'Nunito';
+}
+
+.curriculum .title a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.curriculum .title img{
+    padding-left: 8px;
+}
+
+.curriculum .ubicacion{
+    font-family: 'Nunito';
+    font-size: 16px;
+    color: #25282B;
+}
+
+.curriculum .description{
+    color: #828282;
+    font-family: 'Nunito';
+    padding-bottom: 16px;
+}
+
+.description ul{
+    margin: 0px;
+}
+
+.curriculum button{
+    background-color: #FDC435;
+    border: 1px solid #FDC435;
+    border-radius: 6px;
+    padding: 8px 16px;
+    width: 220px;
+    cursor: pointer;
+    
+}
+
+.curriculum button a{
+    font-size: 16px;
+    color: #25282B;
+    font-family: 'Nunito';
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.descargable{
+    display: flex;
+    justify-content: end;
+}
+/* CONTACT-------------------------------------------------------------------------- */
+
+.title {
+    position: relative;
+    display: inline-block;
+}
+
+.info-adicional .title::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 3px;
+    background-color: #FDC435;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.info-adicional div{
+    display: flex;
+    align-items: center;
+    line-height: 2.5;
+}
+
+.info-adicional div span{
+    color: #25282B;
+    font-family: 'Nunito';
+    font-size: 16px;
+    padding: 0px 16px;
+}
+
+.info-adicional div span a{
+    color: #25282B;
+    font-family: 'Nunito';
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#contact-form label{
+    font-family: 'Nunito';
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+#contact-form input{
+    width: 90%;
+    height: 45px;
+    border: 1px solid #828282;
+    border-radius: 6px;
+    padding: 0px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contact-form textarea{
+    width: 90%;
+    height: 150px;
+    border: 1px solid #828282;
+    border-radius: 6px;
+    padding: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contact-form input, #contact-form textarea {
+    outline: none;
+}
+
+#contact-form button{
+    background-color: #FDC435;
+    border: 1px solid #FDC435;
+    border-radius: 6px;
+    padding: 8px;
+    width: 150px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    cursor: pointer;
+}
